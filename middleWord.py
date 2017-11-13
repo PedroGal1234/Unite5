@@ -4,12 +4,11 @@
 
 words = input('Enter a list of words:').split(' ')
 
-x = len.words[:]
-print(x)
+x = len(words[:])
 middle = x/2
-
-if x%1 == O:
+print(middle//1)
+if middle//1 == 0:
     print(words[middle])
 else:
-    print(words[middle+1],words[middle])
+    print(words[middle-1],words[middle])
 

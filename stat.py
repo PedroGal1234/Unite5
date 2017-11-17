@@ -18,20 +18,22 @@ numbers.sort
 mean = (sum(numbers))/(len(numbers))
 
 print('Min:',numbers[0])
-print('Mean',mean)
+print('Mean: ',mean)
 
 x = (len(numbers[:]))/2
 if x//1 == 0:
-    print('Median', num[x])
+    print('Median: ', num[x])
 else:
-    print('Median',numbers[middle-1],'and',numbers[middle])
+    print('Median: ',numbers[x-1],'and',numbers[x])
 
 print('Max:',numbers[-1])
 
+mode = 0
 for i in numbers:
-    if theList.count(i)> mode:
-        mode = theList.count(i)
-print('Mode',mode)
+    if numbers.count(i)> mode:
+        mode = numbers.count(i)
+        n = i
+print('Mode: ',n)
     
 
 

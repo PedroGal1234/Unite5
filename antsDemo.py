@@ -16,6 +16,8 @@ def step():
             ant.x += dx
         if ant.y + dy > 0 and ant.y+dy < WIDTH:
             ant.y += dx
+def addAnt(event):
+    data['antList'].append(Sprite(ant,(randint(10,WIDTH),(randint(10,HEIGHT)))))
 
 if __name__ == '__main__':
 
@@ -25,7 +27,7 @@ if __name__ == '__main__':
     data = {}
     data['antList'] = []
     
-    for i in range(51):
+    for i in range(1):
         data['antList'].append(Sprite(ant,(randint(10,WIDTH),(randint(10,HEIGHT)))))
     
     App().run(step)

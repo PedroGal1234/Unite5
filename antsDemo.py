@@ -8,12 +8,25 @@ from random import randint
 WIDTH = 800
 HEIGHT = 500
 
+def step():
+    for ant in data['antList']:
+        dx = randint(-4,3)
+        dy = randint(-4,3)
+        if ant.x + dx > 0 and ant.x+dx < WIDTH:
+            ant.x += dx
+        if ant.y + dy > 0 and ant.y+dy < WIDTH:
+            ant.y += dx
+
 if __name__ == '__main__':
 
     red = Color(0xFF0000,1)
     ant = CircleAsset(10,LineStyle(1,red),red)
-    for i in range(100):
-        Sprite(ant,(randint(10,WIDTH),(randint(10,HEIGHT))))
     
-    App().run()
+    data = {}
+    data['antList'] = []
+    
+    for i in range(51):
+        data['antList'].append(Sprite(ant,(randint(10,WIDTH),(randint(10,HEIGHT)))))
+    
+    App().run(step)
 

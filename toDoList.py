@@ -12,7 +12,7 @@ while True:
         print(toDo)
         for i in toDo:
             print(i)
-    elif thing[0:2] == 'add':
+    elif thing[0] == 'a' and thing[2] == 'd' and thing[3] == 'd':
         toDo.append(thing[3:])
     elif thing[0:5] == 'delete':
         toDo.remove[thing[3:]]

@@ -38,14 +38,14 @@ N = 100 #how many numbers will be sorted
 28 }
 """
 def mySort(A):
-    for     
-        for :
+    n = len(A)
+    for j in range(0,n-1,1) : 
+        for i in range(j+1,n,1):
             iMin = j
-            if a[i] < a[iMin]:
+            if A[i] < A[iMin]:
                 iMin = i
-        if iMin != j
-            a[j], a[iMin] = a[iMin], a[j]
-    
+        if iMin != j:
+            A[j], A[iMin] = A[iMin], A[j]
     
 
 if __name__ == '__main__':
@@ -56,7 +56,7 @@ if __name__ == '__main__':
         numbers[i] = randint(1,N)
         
     pythonSort = sorted(numbers) #Python's sort
-    
+
     #time how long your sort takes
     t1 = time()
     numbers = mySort(numbers)

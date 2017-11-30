@@ -1,16 +1,20 @@
 #Pedro Gallino
 #11/30/17
 #warmUp15.py - inputs a list and then doubles all the numbers
+from random import randint
 
-numbers = []
+AMOUNT = 100
+org = []
 
 def double(L):
+    numbers = []
     for i in (L):
         k = i*2
         numbers.append(k)
+    numbers.sort()
     return numbers
 
-print(double([98,100,6]))
+for i in range(1,AMOUNT):
+    org.append(randint(1,1000))
 
-
-
+print(double(org))

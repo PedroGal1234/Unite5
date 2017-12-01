@@ -5,7 +5,7 @@
 from random import randint
 from time import time
 
-N = 10000 #how many numbers will be sorted
+N = 100 #how many numbers will be sorted
 
 def mySort(A):
     n = len(A)
@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
     #time how long your sort takes
     t1 = time()
-    numbers = ((numbers.sort()))
+    numbers = ((mySort(numbers)))
     t2 = time()
        
     #print whether the sort worked or not

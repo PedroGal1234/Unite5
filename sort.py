@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
     #time how long your sort takes
     t1 = time()
-    numbers = (mySort(numbers))
+    numbers = ((numbers.sort()))
     t2 = time()
        
     #print whether the sort worked or not
